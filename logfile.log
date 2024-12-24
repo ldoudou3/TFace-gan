@@ -1,0 +1,805 @@
+2024-12-24 13:50:30,807: Dataset TFR-MS1Mv2, batch_size 64, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:50:30,881: Dataset TFR-MS1Mv2, batch_size 64, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:50:30,935: Dataset TFR-MS1Mv2, batch_size 64, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:50:30,962: Dataset TFR-MS1Mv2, batch_size 64, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:50:31,868: Added key: store_based_barrier_key:1 to store for rank: 2
+2024-12-24 13:50:31,939: Added key: store_based_barrier_key:1 to store for rank: 4
+2024-12-24 13:50:31,991: Added key: store_based_barrier_key:1 to store for rank: 7
+2024-12-24 13:50:33,388: Dataset TFR-MS1Mv2, batch_size 64, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:50:33,406: Dataset TFR-MS1Mv2, batch_size 64, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:50:33,411: Dataset TFR-MS1Mv2, batch_size 64, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:50:33,437: Added key: store_based_barrier_key:1 to store for rank: 6
+2024-12-24 13:50:33,447: Added key: store_based_barrier_key:1 to store for rank: 3
+2024-12-24 13:50:33,454: Added key: store_based_barrier_key:1 to store for rank: 1
+2024-12-24 13:50:33,540: Dataset TFR-MS1Mv2, batch_size 64, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:50:33,584: Added key: store_based_barrier_key:1 to store for rank: 5
+2024-12-24 13:50:33,615: Added key: store_based_barrier_key:1 to store for rank: 0
+2024-12-24 13:50:33,619: world_size: 8, rank: 5, local_rank: 5
+2024-12-24 13:50:33,640: world_size: 8, rank: 2, local_rank: 2
+2024-12-24 13:50:33,657: world_size: 8, rank: 0, local_rank: 0
+2024-12-24 13:50:33,663: world_size: 8, rank: 1, local_rank: 1
+2024-12-24 13:50:33,668: world_size: 8, rank: 3, local_rank: 3
+2024-12-24 13:50:33,668: world_size: 8, rank: 6, local_rank: 6
+2024-12-24 13:50:33,669: world_size: 8, rank: 4, local_rank: 4
+2024-12-24 13:50:33,669: world_size: 8, rank: 7, local_rank: 7
+2024-12-24 13:50:45,953: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 13:50:45,954: Dataset TFR-MS1Mv2, total_size 5822976, mine_size 727872, batch_num 11373
+2024-12-24 13:50:45,954: MultiDistributedSampler max_batch_num 11373
+2024-12-24 13:50:45,954: Step_per_epoch = 11373
+2024-12-24 13:50:45,980: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:50:45,981: Dataset TFR-MS1Mv2, total_size 5822976, mine_size 727872, batch_num 11373
+2024-12-24 13:50:45,982: MultiDistributedSampler max_batch_num 11373
+2024-12-24 13:50:45,982: Step_per_epoch = 11373
+2024-12-24 13:50:45,990: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:50:45,992: Dataset TFR-MS1Mv2, total_size 5822976, mine_size 727872, batch_num 11373
+2024-12-24 13:50:45,992: MultiDistributedSampler max_batch_num 11373
+2024-12-24 13:50:45,992: Step_per_epoch = 11373
+2024-12-24 13:50:46,004: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 13:50:46,006: Dataset TFR-MS1Mv2, total_size 5822976, mine_size 727872, batch_num 11373
+2024-12-24 13:50:46,006: MultiDistributedSampler max_batch_num 11373
+2024-12-24 13:50:46,006: Step_per_epoch = 11373
+2024-12-24 13:50:46,045: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:50:46,047: Dataset TFR-MS1Mv2, total_size 5822976, mine_size 727872, batch_num 11373
+2024-12-24 13:50:46,047: MultiDistributedSampler max_batch_num 11373
+2024-12-24 13:50:46,047: Step_per_epoch = 11373
+2024-12-24 13:50:46,073: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 13:50:46,075: Dataset TFR-MS1Mv2, total_size 5822976, mine_size 727872, batch_num 11373
+2024-12-24 13:50:46,075: MultiDistributedSampler max_batch_num 11373
+2024-12-24 13:50:46,075: Step_per_epoch = 11373
+2024-12-24 13:50:46,092: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:50:46,095: Dataset TFR-MS1Mv2, total_size 5822976, mine_size 727872, batch_num 11373
+2024-12-24 13:50:46,095: MultiDistributedSampler max_batch_num 11373
+2024-12-24 13:50:46,096: Step_per_epoch = 11373
+2024-12-24 13:50:46,190: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:50:46,192: Dataset TFR-MS1Mv2, total_size 5822976, mine_size 727872, batch_num 11373
+2024-12-24 13:50:46,193: MultiDistributedSampler max_batch_num 11373
+2024-12-24 13:50:46,193: Step_per_epoch = 11373
+2024-12-24 13:50:50,731: IR_50 Backbone Generated
+2024-12-24 13:50:50,733: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:50:50,819: IR_50 Backbone Generated
+2024-12-24 13:50:50,820: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:50:50,879: IR_50 Backbone Generated
+2024-12-24 13:50:50,881: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:50:50,881: IR_50 Backbone Generated
+2024-12-24 13:50:50,882: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:50:50,966: IR_50 Backbone Generated
+2024-12-24 13:50:50,967: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:50:50,985: IR_50 Backbone Generated
+2024-12-24 13:50:50,986: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:50:51,000: IR_50 Backbone Generated
+2024-12-24 13:50:51,002: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:50:51,026: IR_50 Backbone Generated
+2024-12-24 13:50:51,027: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:50:51,146: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:50:51,233: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:50:51,300: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:50:51,300: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:50:51,381: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:50:51,403: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:50:51,423: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:50:51,446: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:50:53,135: Current epoch 1, learning rate 0.1
+2024-12-24 13:50:53,135: Current epoch 1, learning rate 0.1
+2024-12-24 13:50:53,135: Current epoch 1, learning rate 0.1
+2024-12-24 13:50:53,135: Current epoch 1, learning rate 0.1
+2024-12-24 13:50:53,135: Current epoch 1, learning rate 0.1
+2024-12-24 13:50:53,135: Current epoch 1, learning rate 0.1
+2024-12-24 13:50:53,135: Current epoch 1, learning rate 0.1
+2024-12-24 13:50:53,135: Current epoch 1, learning rate 0.1
+2024-12-24 13:54:53,868: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:54:53,926: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:54:53,933: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:54:53,947: Added key: store_based_barrier_key:1 to store for rank: 3
+2024-12-24 13:54:53,971: Added key: store_based_barrier_key:1 to store for rank: 2
+2024-12-24 13:54:56,288: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:54:56,314: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:54:56,330: Added key: store_based_barrier_key:1 to store for rank: 4
+2024-12-24 13:54:56,339: Added key: store_based_barrier_key:1 to store for rank: 7
+2024-12-24 13:54:56,544: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:54:56,579: Added key: store_based_barrier_key:1 to store for rank: 5
+2024-12-24 13:54:56,669: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:54:56,708: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:54:56,711: Added key: store_based_barrier_key:1 to store for rank: 6
+2024-12-24 13:54:56,736: Added key: store_based_barrier_key:1 to store for rank: 1
+2024-12-24 13:54:56,741: Added key: store_based_barrier_key:1 to store for rank: 0
+2024-12-24 13:54:56,752: world_size: 8, rank: 6, local_rank: 6
+2024-12-24 13:54:56,756: world_size: 8, rank: 0, local_rank: 0
+2024-12-24 13:54:56,769: world_size: 8, rank: 1, local_rank: 1
+2024-12-24 13:54:56,784: world_size: 8, rank: 5, local_rank: 5
+2024-12-24 13:54:56,789: world_size: 8, rank: 7, local_rank: 7
+2024-12-24 13:54:56,790: world_size: 8, rank: 3, local_rank: 3
+2024-12-24 13:54:56,791: world_size: 8, rank: 4, local_rank: 4
+2024-12-24 13:54:56,791: world_size: 8, rank: 2, local_rank: 2
+2024-12-24 13:55:09,031: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 13:55:09,031: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:55:09,031: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:55:09,032: Step_per_epoch = 22745
+2024-12-24 13:55:09,084: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 13:55:09,086: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:55:09,086: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:55:09,086: Step_per_epoch = 22745
+2024-12-24 13:55:09,099: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:55:09,103: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:55:09,103: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:55:09,103: Step_per_epoch = 22745
+2024-12-24 13:55:09,129: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:55:09,131: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:55:09,131: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:55:09,132: Step_per_epoch = 22745
+2024-12-24 13:55:09,176: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 13:55:09,177: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:55:09,177: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:55:09,178: Step_per_epoch = 22745
+2024-12-24 13:55:09,193: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:55:09,195: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:55:09,195: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:55:09,195: Step_per_epoch = 22745
+2024-12-24 13:55:09,330: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:55:09,332: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:55:09,332: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:55:09,332: Step_per_epoch = 22745
+2024-12-24 13:55:09,353: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:55:09,354: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:55:09,354: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:55:09,354: Step_per_epoch = 22745
+2024-12-24 13:55:13,771: IR_50 Backbone Generated
+2024-12-24 13:55:13,772: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:55:13,871: IR_50 Backbone Generated
+2024-12-24 13:55:13,872: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:55:13,943: IR_50 Backbone Generated
+2024-12-24 13:55:13,944: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:55:13,956: IR_50 Backbone Generated
+2024-12-24 13:55:13,957: IR_50 Backbone Generated
+2024-12-24 13:55:13,958: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:55:13,958: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:55:13,978: IR_50 Backbone Generated
+2024-12-24 13:55:13,980: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:55:14,006: IR_50 Backbone Generated
+2024-12-24 13:55:14,008: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:55:14,105: IR_50 Backbone Generated
+2024-12-24 13:55:14,108: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:55:14,186: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:55:14,284: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:55:14,361: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:55:14,373: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:55:14,375: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:55:14,399: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:55:14,426: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:55:14,526: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:55:16,163: Current epoch 1, learning rate 0.1
+2024-12-24 13:55:16,166: Current epoch 1, learning rate 0.1
+2024-12-24 13:55:16,168: Current epoch 1, learning rate 0.1
+2024-12-24 13:55:16,172: Current epoch 1, learning rate 0.1
+2024-12-24 13:55:16,175: Current epoch 1, learning rate 0.1
+2024-12-24 13:55:16,176: Current epoch 1, learning rate 0.1
+2024-12-24 13:55:16,176: Current epoch 1, learning rate 0.1
+2024-12-24 13:55:16,177: Current epoch 1, learning rate 0.1
+2024-12-24 13:55:20,647: Epoch 1 / 24, batch 1 / 22745, 4.4821 sec/batch
+2024-12-24 13:57:09,052: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:57:09,086: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:57:09,091: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:57:09,091: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:57:09,098: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:57:09,117: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:57:09,120: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:57:09,132: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 13:57:10,102: Added key: store_based_barrier_key:1 to store for rank: 6
+2024-12-24 13:57:10,158: Added key: store_based_barrier_key:1 to store for rank: 1
+2024-12-24 13:57:10,168: Added key: store_based_barrier_key:1 to store for rank: 5
+2024-12-24 13:57:10,219: Added key: store_based_barrier_key:1 to store for rank: 4
+2024-12-24 13:57:10,224: Added key: store_based_barrier_key:1 to store for rank: 2
+2024-12-24 13:57:10,233: Added key: store_based_barrier_key:1 to store for rank: 3
+2024-12-24 13:57:10,250: Added key: store_based_barrier_key:1 to store for rank: 7
+2024-12-24 13:57:10,257: Added key: store_based_barrier_key:1 to store for rank: 0
+2024-12-24 13:57:10,291: world_size: 8, rank: 0, local_rank: 0
+2024-12-24 13:57:10,309: world_size: 8, rank: 1, local_rank: 1
+2024-12-24 13:57:10,314: world_size: 8, rank: 5, local_rank: 5
+2024-12-24 13:57:10,315: world_size: 8, rank: 4, local_rank: 4
+2024-12-24 13:57:10,316: world_size: 8, rank: 3, local_rank: 3
+2024-12-24 13:57:10,316: world_size: 8, rank: 6, local_rank: 6
+2024-12-24 13:57:10,316: world_size: 8, rank: 7, local_rank: 7
+2024-12-24 13:57:10,317: world_size: 8, rank: 2, local_rank: 2
+2024-12-24 13:57:22,694: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:57:22,695: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:57:22,695: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:57:22,695: Step_per_epoch = 22745
+2024-12-24 13:57:22,770: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 13:57:22,771: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:57:22,772: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:57:22,772: Step_per_epoch = 22745
+2024-12-24 13:57:22,774: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:57:22,774: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:57:22,774: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:57:22,774: Step_per_epoch = 22745
+2024-12-24 13:57:22,789: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 13:57:22,790: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:57:22,790: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:57:22,791: Step_per_epoch = 22745
+2024-12-24 13:57:22,862: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:57:22,862: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:57:22,862: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:57:22,862: Step_per_epoch = 22745
+2024-12-24 13:57:22,898: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:57:22,899: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:57:22,899: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:57:22,899: Step_per_epoch = 22745
+2024-12-24 13:57:22,931: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 13:57:22,934: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:57:22,934: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:57:22,934: Step_per_epoch = 22745
+2024-12-24 13:57:23,647: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 13:57:23,649: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 13:57:23,649: MultiDistributedSampler max_batch_num 22745
+2024-12-24 13:57:23,649: Step_per_epoch = 22745
+2024-12-24 13:57:27,457: IR_50 Backbone Generated
+2024-12-24 13:57:27,459: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:57:27,468: IR_50 Backbone Generated
+2024-12-24 13:57:27,469: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:57:27,494: IR_50 Backbone Generated
+2024-12-24 13:57:27,496: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:57:27,513: IR_50 Backbone Generated
+2024-12-24 13:57:27,515: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:57:27,584: IR_50 Backbone Generated
+2024-12-24 13:57:27,585: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:57:27,619: IR_50 Backbone Generated
+2024-12-24 13:57:27,620: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:57:27,684: IR_50 Backbone Generated
+2024-12-24 13:57:27,687: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:57:27,874: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:57:27,886: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:57:27,913: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:57:27,929: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:57:28,003: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:57:28,034: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:57:28,115: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:57:28,130: IR_50 Backbone Generated
+2024-12-24 13:57:28,132: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 13:57:28,551: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 13:57:30,267: Current epoch 1, learning rate 0.1
+2024-12-24 13:57:30,270: Current epoch 1, learning rate 0.1
+2024-12-24 13:57:30,271: Current epoch 1, learning rate 0.1
+2024-12-24 13:57:30,275: Current epoch 1, learning rate 0.1
+2024-12-24 13:57:30,279: Current epoch 1, learning rate 0.1
+2024-12-24 13:57:30,279: Current epoch 1, learning rate 0.1
+2024-12-24 13:57:30,281: Current epoch 1, learning rate 0.1
+2024-12-24 13:57:30,285: Current epoch 1, learning rate 0.1
+2024-12-24 13:57:33,768: Epoch 1 / 24, batch 1 / 22745, 3.4985 sec/batch
+2024-12-24 14:00:59,586: Epoch 1 / 24, batch 100 / 22745, 2.0932 sec/batch
+2024-12-24 14:05:28,762: Epoch 1 / 24, batch 200 / 22745, 2.3925 sec/batch
+2024-12-24 14:07:20,092: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 14:07:20,132: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 14:07:20,173: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 14:07:22,565: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 14:07:22,580: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 14:07:22,621: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 14:07:22,682: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 14:07:23,013: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 14:07:23,141: Added key: store_based_barrier_key:1 to store for rank: 4
+2024-12-24 14:07:23,181: Added key: store_based_barrier_key:1 to store for rank: 6
+2024-12-24 14:07:23,239: Added key: store_based_barrier_key:1 to store for rank: 7
+2024-12-24 14:07:23,591: Added key: store_based_barrier_key:1 to store for rank: 2
+2024-12-24 14:07:23,626: Added key: store_based_barrier_key:1 to store for rank: 5
+2024-12-24 14:07:23,657: Added key: store_based_barrier_key:1 to store for rank: 1
+2024-12-24 14:07:23,743: Added key: store_based_barrier_key:1 to store for rank: 3
+2024-12-24 14:07:23,744: Added key: store_based_barrier_key:1 to store for rank: 0
+2024-12-24 14:07:23,775: world_size: 8, rank: 3, local_rank: 3
+2024-12-24 14:07:23,787: world_size: 8, rank: 0, local_rank: 0
+2024-12-24 14:07:23,788: world_size: 8, rank: 2, local_rank: 2
+2024-12-24 14:07:23,799: world_size: 8, rank: 7, local_rank: 7
+2024-12-24 14:07:23,802: world_size: 8, rank: 1, local_rank: 1
+2024-12-24 14:07:23,802: world_size: 8, rank: 5, local_rank: 5
+2024-12-24 14:07:23,803: world_size: 8, rank: 6, local_rank: 6
+2024-12-24 14:07:23,803: world_size: 8, rank: 4, local_rank: 4
+2024-12-24 14:07:36,207: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 14:07:36,208: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 14:07:36,208: MultiDistributedSampler max_batch_num 22745
+2024-12-24 14:07:36,208: Step_per_epoch = 22745
+2024-12-24 14:07:36,227: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 14:07:36,228: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 14:07:36,228: MultiDistributedSampler max_batch_num 22745
+2024-12-24 14:07:36,229: Step_per_epoch = 22745
+2024-12-24 14:07:36,351: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 14:07:36,352: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 14:07:36,352: MultiDistributedSampler max_batch_num 22745
+2024-12-24 14:07:36,353: Step_per_epoch = 22745
+2024-12-24 14:07:36,370: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 14:07:36,370: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 14:07:36,371: MultiDistributedSampler max_batch_num 22745
+2024-12-24 14:07:36,371: Step_per_epoch = 22745
+2024-12-24 14:07:36,371: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 14:07:36,373: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 14:07:36,373: MultiDistributedSampler max_batch_num 22745
+2024-12-24 14:07:36,373: Step_per_epoch = 22745
+2024-12-24 14:07:36,493: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 14:07:36,493: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 14:07:36,494: MultiDistributedSampler max_batch_num 22745
+2024-12-24 14:07:36,494: Step_per_epoch = 22745
+2024-12-24 14:07:36,736: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 14:07:36,737: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 14:07:36,738: MultiDistributedSampler max_batch_num 22745
+2024-12-24 14:07:36,738: Step_per_epoch = 22745
+2024-12-24 14:07:36,978: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 14:07:36,978: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 14:07:36,979: MultiDistributedSampler max_batch_num 22745
+2024-12-24 14:07:36,979: Step_per_epoch = 22745
+2024-12-24 14:07:40,895: IR_50 Backbone Generated
+2024-12-24 14:07:40,897: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 14:07:40,911: IR_50 Backbone Generated
+2024-12-24 14:07:40,913: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 14:07:41,044: IR_50 Backbone Generated
+2024-12-24 14:07:41,045: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 14:07:41,070: IR_50 Backbone Generated
+2024-12-24 14:07:41,071: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 14:07:41,120: IR_50 Backbone Generated
+2024-12-24 14:07:41,121: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 14:07:41,143: IR_50 Backbone Generated
+2024-12-24 14:07:41,145: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 14:07:41,312: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 14:07:41,326: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 14:07:41,387: IR_50 Backbone Generated
+2024-12-24 14:07:41,389: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 14:07:41,459: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 14:07:41,489: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 14:07:41,535: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 14:07:41,565: IR_50 Backbone Generated
+2024-12-24 14:07:41,566: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 14:07:41,568: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 14:07:41,806: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 14:07:41,979: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 14:07:43,625: Current epoch 1, learning rate 0.1
+2024-12-24 14:07:43,626: Current epoch 1, learning rate 0.1
+2024-12-24 14:07:43,630: Current epoch 1, learning rate 0.1
+2024-12-24 14:07:43,632: Current epoch 1, learning rate 0.1
+2024-12-24 14:07:43,632: Current epoch 1, learning rate 0.1
+2024-12-24 14:07:43,633: Current epoch 1, learning rate 0.1
+2024-12-24 14:07:43,633: Current epoch 1, learning rate 0.1
+2024-12-24 14:07:43,633: Current epoch 1, learning rate 0.1
+2024-12-24 14:07:48,150: Epoch 1 / 24, batch 1 / 22745, 4.5234 sec/batch
+2024-12-24 14:09:10,865: Epoch 1 / 24, batch 100 / 22745, 0.8724 sec/batch
+2024-12-24 14:10:34,461: Epoch 1 / 24, batch 200 / 22745, 0.8542 sec/batch
+2024-12-24 14:12:59,243: Epoch 1 / 24, batch 300 / 22745, 1.0521 sec/batch
+2024-12-24 14:15:25,687: Epoch 1 / 24, batch 400 / 22745, 1.1552 sec/batch
+2024-12-24 14:17:13,795: Epoch 1 / 24, batch 500 / 22745, 1.1403 sec/batch
+2024-12-24 14:18:42,779: Epoch 1 / 24, batch 600 / 22745, 0.8898 sec/batch
+2024-12-24 14:20:20,795: Epoch 1 / 24, batch 700 / 22745, 0.9350 sec/batch
+2024-12-24 14:22:02,503: Epoch 1 / 24, batch 800 / 22745, 0.9624 sec/batch
+2024-12-24 14:23:49,471: Epoch 1 / 24, batch 900 / 22745, 0.9892 sec/batch
+2024-12-24 14:25:35,153: Epoch 1 / 24, batch 1000 / 22745, 1.0027 sec/batch
+2024-12-24 14:27:13,665: Epoch 1 / 24, batch 1100 / 22745, 0.9851 sec/batch
+2024-12-24 14:28:52,393: Epoch 1 / 24, batch 1200 / 22745, 0.9862 sec/batch
+2024-12-24 14:30:18,778: Epoch 1 / 24, batch 1300 / 22745, 0.9454 sec/batch
+2024-12-24 14:31:42,532: Epoch 1 / 24, batch 1400 / 22745, 0.9184 sec/batch
+2024-12-24 14:33:05,932: Epoch 1 / 24, batch 1500 / 22745, 0.9016 sec/batch
+2024-12-24 14:34:29,187: Epoch 1 / 24, batch 1600 / 22745, 0.8325 sec/batch
+2024-12-24 14:35:52,502: Epoch 1 / 24, batch 1700 / 22745, 0.8328 sec/batch
+2024-12-24 14:37:15,818: Epoch 1 / 24, batch 1800 / 22745, 0.8330 sec/batch
+2024-12-24 14:38:39,196: Epoch 1 / 24, batch 1900 / 22745, 0.8332 sec/batch
+2024-12-24 14:40:02,614: Epoch 1 / 24, batch 2000 / 22745, 0.8334 sec/batch
+2024-12-24 14:41:25,989: Epoch 1 / 24, batch 2100 / 22745, 0.8338 sec/batch
+2024-12-24 14:42:49,603: Epoch 1 / 24, batch 2200 / 22745, 0.8349 sec/batch
+2024-12-24 14:44:12,967: Epoch 1 / 24, batch 2300 / 22745, 0.8345 sec/batch
+2024-12-24 14:45:36,381: Epoch 1 / 24, batch 2400 / 22745, 0.8344 sec/batch
+2024-12-24 14:46:59,927: Epoch 1 / 24, batch 2500 / 22745, 0.8346 sec/batch
+2024-12-24 14:48:24,174: Epoch 1 / 24, batch 2600 / 22745, 0.8425 sec/batch
+2024-12-24 14:49:48,021: Epoch 1 / 24, batch 2700 / 22745, 0.8405 sec/batch
+2024-12-24 14:51:11,704: Epoch 1 / 24, batch 2800 / 22745, 0.8393 sec/batch
+2024-12-24 14:52:35,565: Epoch 1 / 24, batch 2900 / 22745, 0.8391 sec/batch
+2024-12-24 14:53:59,725: Epoch 1 / 24, batch 3000 / 22745, 0.8396 sec/batch
+2024-12-24 14:55:23,917: Epoch 1 / 24, batch 3100 / 22745, 0.8419 sec/batch
+2024-12-24 14:56:48,238: Epoch 1 / 24, batch 3200 / 22745, 0.8426 sec/batch
+2024-12-24 14:58:11,797: Epoch 1 / 24, batch 3300 / 22745, 0.8402 sec/batch
+2024-12-24 14:59:35,940: Epoch 1 / 24, batch 3400 / 22745, 0.8405 sec/batch
+2024-12-24 15:00:59,951: Epoch 1 / 24, batch 3500 / 22745, 0.8405 sec/batch
+2024-12-24 15:02:24,402: Epoch 1 / 24, batch 3600 / 22745, 0.8445 sec/batch
+2024-12-24 15:03:47,705: Epoch 1 / 24, batch 3700 / 22745, 0.8388 sec/batch
+2024-12-24 15:05:12,425: Epoch 1 / 24, batch 3800 / 22745, 0.8416 sec/batch
+2024-12-24 15:06:36,402: Epoch 1 / 24, batch 3900 / 22745, 0.8411 sec/batch
+2024-12-24 15:08:00,717: Epoch 1 / 24, batch 4000 / 22745, 0.8415 sec/batch
+2024-12-24 15:09:24,392: Epoch 1 / 24, batch 4100 / 22745, 0.8367 sec/batch
+2024-12-24 15:10:48,245: Epoch 1 / 24, batch 4200 / 22745, 0.8376 sec/batch
+2024-12-24 15:12:11,909: Epoch 1 / 24, batch 4300 / 22745, 0.8373 sec/batch
+2024-12-24 15:13:35,852: Epoch 1 / 24, batch 4400 / 22745, 0.8378 sec/batch
+2024-12-24 15:15:00,601: Epoch 1 / 24, batch 4500 / 22745, 0.8398 sec/batch
+2024-12-24 15:16:25,093: Epoch 1 / 24, batch 4600 / 22745, 0.8449 sec/batch
+2024-12-24 15:17:49,242: Epoch 1 / 24, batch 4700 / 22745, 0.8432 sec/batch
+2024-12-24 15:19:12,708: Epoch 1 / 24, batch 4800 / 22745, 0.8404 sec/batch
+2024-12-24 15:20:36,105: Epoch 1 / 24, batch 4900 / 22745, 0.8388 sec/batch
+2024-12-24 15:21:59,452: Epoch 1 / 24, batch 5000 / 22745, 0.8377 sec/batch
+2024-12-24 15:23:23,077: Epoch 1 / 24, batch 5100 / 22745, 0.8362 sec/batch
+2024-12-24 15:24:46,639: Epoch 1 / 24, batch 5200 / 22745, 0.8359 sec/batch
+2024-12-24 15:26:10,026: Epoch 1 / 24, batch 5300 / 22745, 0.8352 sec/batch
+2024-12-24 15:27:33,931: Epoch 1 / 24, batch 5400 / 22745, 0.8362 sec/batch
+2024-12-24 15:28:57,508: Epoch 1 / 24, batch 5500 / 22745, 0.8361 sec/batch
+2024-12-24 15:30:21,030: Epoch 1 / 24, batch 5600 / 22745, 0.8352 sec/batch
+2024-12-24 15:31:44,558: Epoch 1 / 24, batch 5700 / 22745, 0.8353 sec/batch
+2024-12-24 15:33:08,122: Epoch 1 / 24, batch 5800 / 22745, 0.8354 sec/batch
+2024-12-24 15:34:32,001: Epoch 1 / 24, batch 5900 / 22745, 0.8362 sec/batch
+2024-12-24 15:35:55,328: Epoch 1 / 24, batch 6000 / 22745, 0.8356 sec/batch
+2024-12-24 15:37:18,908: Epoch 1 / 24, batch 6100 / 22745, 0.8358 sec/batch
+2024-12-24 15:38:42,490: Epoch 1 / 24, batch 6200 / 22745, 0.8358 sec/batch
+2024-12-24 15:40:06,470: Epoch 1 / 24, batch 6300 / 22745, 0.8371 sec/batch
+2024-12-24 15:41:30,176: Epoch 1 / 24, batch 6400 / 22745, 0.8371 sec/batch
+2024-12-24 15:42:53,985: Epoch 1 / 24, batch 6500 / 22745, 0.8373 sec/batch
+2024-12-24 15:44:17,694: Epoch 1 / 24, batch 6600 / 22745, 0.8371 sec/batch
+2024-12-24 15:45:41,678: Epoch 1 / 24, batch 6700 / 22745, 0.8385 sec/batch
+2024-12-24 15:47:05,101: Epoch 1 / 24, batch 6800 / 22745, 0.8371 sec/batch
+2024-12-24 15:48:28,569: Epoch 1 / 24, batch 6900 / 22745, 0.8365 sec/batch
+2024-12-24 15:49:52,141: Epoch 1 / 24, batch 7000 / 22745, 0.8363 sec/batch
+2024-12-24 15:51:16,041: Epoch 1 / 24, batch 7100 / 22745, 0.8390 sec/batch
+2024-12-24 15:52:40,012: Epoch 1 / 24, batch 7200 / 22745, 0.8394 sec/batch
+2024-12-24 15:54:03,772: Epoch 1 / 24, batch 7300 / 22745, 0.8388 sec/batch
+2024-12-24 15:55:27,366: Epoch 1 / 24, batch 7400 / 22745, 0.8381 sec/batch
+2024-12-24 15:56:51,004: Epoch 1 / 24, batch 7500 / 22745, 0.8377 sec/batch
+2024-12-24 15:58:14,879: Epoch 1 / 24, batch 7600 / 22745, 0.8387 sec/batch
+2024-12-24 15:59:38,878: Epoch 1 / 24, batch 7700 / 22745, 0.8394 sec/batch
+2024-12-24 16:01:02,797: Epoch 1 / 24, batch 7800 / 22745, 0.8393 sec/batch
+2024-12-24 16:02:26,326: Epoch 1 / 24, batch 7900 / 22745, 0.8383 sec/batch
+2024-12-24 16:03:49,840: Epoch 1 / 24, batch 8000 / 22745, 0.8377 sec/batch
+2024-12-24 16:05:13,741: Epoch 1 / 24, batch 8100 / 22745, 0.8390 sec/batch
+2024-12-24 16:06:37,234: Epoch 1 / 24, batch 8200 / 22745, 0.8370 sec/batch
+2024-12-24 16:08:00,931: Epoch 1 / 24, batch 8300 / 22745, 0.8370 sec/batch
+2024-12-24 16:09:24,726: Epoch 1 / 24, batch 8400 / 22745, 0.8372 sec/batch
+2024-12-24 16:10:48,706: Epoch 1 / 24, batch 8500 / 22745, 0.8377 sec/batch
+2024-12-24 16:12:12,616: Epoch 1 / 24, batch 8600 / 22745, 0.8391 sec/batch
+2024-12-24 16:13:36,460: Epoch 1 / 24, batch 8700 / 22745, 0.8388 sec/batch
+2024-12-24 16:15:00,446: Epoch 1 / 24, batch 8800 / 22745, 0.8391 sec/batch
+2024-12-24 16:16:24,477: Epoch 1 / 24, batch 8900 / 22745, 0.8394 sec/batch
+2024-12-24 16:17:49,074: Epoch 1 / 24, batch 9000 / 22745, 0.8407 sec/batch
+2024-12-24 16:19:13,600: Epoch 1 / 24, batch 9100 / 22745, 0.8453 sec/batch
+2024-12-24 16:20:38,407: Epoch 1 / 24, batch 9200 / 22745, 0.8467 sec/batch
+2024-12-24 16:22:02,895: Epoch 1 / 24, batch 9300 / 22745, 0.8461 sec/batch
+2024-12-24 16:23:27,470: Epoch 1 / 24, batch 9400 / 22745, 0.8460 sec/batch
+2024-12-24 16:24:51,701: Epoch 1 / 24, batch 9500 / 22745, 0.8453 sec/batch
+2024-12-24 16:26:15,667: Epoch 1 / 24, batch 9600 / 22745, 0.8397 sec/batch
+2024-12-24 16:27:40,572: Epoch 1 / 24, batch 9700 / 22745, 0.8444 sec/batch
+2024-12-24 16:29:04,808: Epoch 1 / 24, batch 9800 / 22745, 0.8437 sec/batch
+2024-12-24 16:30:28,932: Epoch 1 / 24, batch 9900 / 22745, 0.8431 sec/batch
+2024-12-24 16:31:52,576: Epoch 1 / 24, batch 10000 / 22745, 0.8418 sec/batch
+2024-12-24 16:33:17,004: Epoch 1 / 24, batch 10100 / 22745, 0.8443 sec/batch
+2024-12-24 16:34:40,500: Epoch 1 / 24, batch 10200 / 22745, 0.8396 sec/batch
+2024-12-24 16:36:03,935: Epoch 1 / 24, batch 10300 / 22745, 0.8379 sec/batch
+2024-12-24 16:37:27,501: Epoch 1 / 24, batch 10400 / 22745, 0.8373 sec/batch
+2024-12-24 16:38:52,126: Epoch 1 / 24, batch 10500 / 22745, 0.8391 sec/batch
+2024-12-24 16:40:16,323: Epoch 1 / 24, batch 10600 / 22745, 0.8420 sec/batch
+2024-12-24 16:41:39,786: Epoch 1 / 24, batch 10700 / 22745, 0.8383 sec/batch
+2024-12-24 16:43:04,844: Epoch 1 / 24, batch 10800 / 22745, 0.8424 sec/batch
+2024-12-24 16:44:29,109: Epoch 1 / 24, batch 10900 / 22745, 0.8425 sec/batch
+2024-12-24 16:45:52,916: Epoch 1 / 24, batch 11000 / 22745, 0.8416 sec/batch
+2024-12-24 16:47:17,168: Epoch 1 / 24, batch 11100 / 22745, 0.8425 sec/batch
+2024-12-24 16:48:41,361: Epoch 1 / 24, batch 11200 / 22745, 0.8422 sec/batch
+2024-12-24 16:50:05,830: Epoch 1 / 24, batch 11300 / 22745, 0.8430 sec/batch
+2024-12-24 16:51:30,111: Epoch 1 / 24, batch 11400 / 22745, 0.8430 sec/batch
+2024-12-24 16:52:54,425: Epoch 1 / 24, batch 11500 / 22745, 0.8430 sec/batch
+2024-12-24 16:54:18,507: Epoch 1 / 24, batch 11600 / 22745, 0.8408 sec/batch
+2024-12-24 16:55:42,116: Epoch 1 / 24, batch 11700 / 22745, 0.8385 sec/batch
+2024-12-24 16:57:05,825: Epoch 1 / 24, batch 11800 / 22745, 0.8380 sec/batch
+2024-12-24 16:58:29,327: Epoch 1 / 24, batch 11900 / 22745, 0.8373 sec/batch
+2024-12-24 16:59:53,041: Epoch 1 / 24, batch 12000 / 22745, 0.8372 sec/batch
+2024-12-24 17:01:17,205: Epoch 1 / 24, batch 12100 / 22745, 0.8416 sec/batch
+2024-12-24 17:02:41,106: Epoch 1 / 24, batch 12200 / 22745, 0.8403 sec/batch
+2024-12-24 17:04:05,572: Epoch 1 / 24, batch 12300 / 22745, 0.8418 sec/batch
+2024-12-24 17:05:28,912: Epoch 1 / 24, batch 12400 / 22745, 0.8397 sec/batch
+2024-12-24 17:06:52,214: Epoch 1 / 24, batch 12500 / 22745, 0.8383 sec/batch
+2024-12-24 17:08:15,904: Epoch 1 / 24, batch 12600 / 22745, 0.8369 sec/batch
+2024-12-24 17:09:39,589: Epoch 1 / 24, batch 12700 / 22745, 0.8369 sec/batch
+2024-12-24 17:11:02,771: Epoch 1 / 24, batch 12800 / 22745, 0.8352 sec/batch
+2024-12-24 17:12:26,235: Epoch 1 / 24, batch 12900 / 22745, 0.8351 sec/batch
+2024-12-24 17:13:49,699: Epoch 1 / 24, batch 13000 / 22745, 0.8350 sec/batch
+2024-12-24 17:15:13,766: Epoch 1 / 24, batch 13100 / 22745, 0.8407 sec/batch
+2024-12-24 17:16:37,763: Epoch 1 / 24, batch 13200 / 22745, 0.8403 sec/batch
+2024-12-24 17:18:01,563: Epoch 1 / 24, batch 13300 / 22745, 0.8395 sec/batch
+2024-12-24 17:19:25,677: Epoch 1 / 24, batch 13400 / 22745, 0.8399 sec/batch
+2024-12-24 17:20:50,502: Epoch 1 / 24, batch 13500 / 22745, 0.8416 sec/batch
+2024-12-24 17:22:14,701: Epoch 1 / 24, batch 13600 / 22745, 0.8420 sec/batch
+2024-12-24 17:23:38,497: Epoch 1 / 24, batch 13700 / 22745, 0.8400 sec/batch
+2024-12-24 17:25:02,996: Epoch 1 / 24, batch 13800 / 22745, 0.8416 sec/batch
+2024-12-24 17:26:27,077: Epoch 1 / 24, batch 13900 / 22745, 0.8414 sec/batch
+2024-12-24 17:27:51,216: Epoch 1 / 24, batch 14000 / 22745, 0.8414 sec/batch
+2024-12-24 17:29:15,273: Epoch 1 / 24, batch 14100 / 22745, 0.8406 sec/batch
+2024-12-24 17:30:40,268: Epoch 1 / 24, batch 14200 / 22745, 0.8453 sec/batch
+2024-12-24 17:32:04,066: Epoch 1 / 24, batch 14300 / 22745, 0.8428 sec/batch
+2024-12-24 17:33:28,322: Epoch 1 / 24, batch 14400 / 22745, 0.8428 sec/batch
+2024-12-24 17:34:52,603: Epoch 1 / 24, batch 14500 / 22745, 0.8428 sec/batch
+2024-12-24 17:36:17,237: Epoch 1 / 24, batch 14600 / 22745, 0.8463 sec/batch
+2024-12-24 17:37:41,543: Epoch 1 / 24, batch 14700 / 22745, 0.8447 sec/batch
+2024-12-24 17:39:05,821: Epoch 1 / 24, batch 14800 / 22745, 0.8441 sec/batch
+2024-12-24 17:40:30,056: Epoch 1 / 24, batch 14900 / 22745, 0.8436 sec/batch
+2024-12-24 17:41:55,127: Epoch 1 / 24, batch 15000 / 22745, 0.8450 sec/batch
+2024-12-24 17:43:19,403: Epoch 1 / 24, batch 15100 / 22745, 0.8428 sec/batch
+2024-12-24 17:44:43,414: Epoch 1 / 24, batch 15200 / 22745, 0.8414 sec/batch
+2024-12-24 17:46:07,517: Epoch 1 / 24, batch 15300 / 22745, 0.8413 sec/batch
+2024-12-24 17:47:31,838: Epoch 1 / 24, batch 15400 / 22745, 0.8418 sec/batch
+2024-12-24 17:48:56,282: Epoch 1 / 24, batch 15500 / 22745, 0.8423 sec/batch
+2024-12-24 17:50:20,600: Epoch 1 / 24, batch 15600 / 22745, 0.8432 sec/batch
+2024-12-24 17:51:45,863: Epoch 1 / 24, batch 15700 / 22745, 0.8479 sec/batch
+2024-12-24 17:53:10,288: Epoch 1 / 24, batch 15800 / 22745, 0.8467 sec/batch
+2024-12-24 17:54:35,196: Epoch 1 / 24, batch 15900 / 22745, 0.8473 sec/batch
+2024-12-24 17:55:59,381: Epoch 1 / 24, batch 16000 / 22745, 0.8462 sec/batch
+2024-12-24 17:57:24,134: Epoch 1 / 24, batch 16100 / 22745, 0.8475 sec/batch
+2024-12-24 17:58:48,169: Epoch 1 / 24, batch 16200 / 22745, 0.8439 sec/batch
+2024-12-24 18:00:13,541: Epoch 1 / 24, batch 16300 / 22745, 0.8472 sec/batch
+2024-12-24 18:01:37,761: Epoch 1 / 24, batch 16400 / 22745, 0.8460 sec/batch
+2024-12-24 18:03:01,872: Epoch 1 / 24, batch 16500 / 22745, 0.8450 sec/batch
+2024-12-24 18:04:26,180: Epoch 1 / 24, batch 16600 / 22745, 0.8431 sec/batch
+2024-12-24 18:05:50,806: Epoch 1 / 24, batch 16700 / 22745, 0.8447 sec/batch
+2024-12-24 18:07:15,043: Epoch 1 / 24, batch 16800 / 22745, 0.8439 sec/batch
+2024-12-24 18:08:39,213: Epoch 1 / 24, batch 16900 / 22745, 0.8434 sec/batch
+2024-12-24 18:10:02,684: Epoch 1 / 24, batch 17000 / 22745, 0.8416 sec/batch
+2024-12-24 18:11:27,311: Epoch 1 / 24, batch 17100 / 22745, 0.8463 sec/batch
+2024-12-24 18:12:51,871: Epoch 1 / 24, batch 17200 / 22745, 0.8459 sec/batch
+2024-12-24 18:14:15,354: Epoch 1 / 24, batch 17300 / 22745, 0.8422 sec/batch
+2024-12-24 18:15:39,251: Epoch 1 / 24, batch 17400 / 22745, 0.8414 sec/batch
+2024-12-24 18:17:03,393: Epoch 1 / 24, batch 17500 / 22745, 0.8414 sec/batch
+2024-12-24 18:18:27,063: Epoch 1 / 24, batch 17600 / 22745, 0.8367 sec/batch
+2024-12-24 18:19:51,239: Epoch 1 / 24, batch 17700 / 22745, 0.8392 sec/batch
+2024-12-24 18:21:14,820: Epoch 1 / 24, batch 17800 / 22745, 0.8381 sec/batch
+2024-12-24 18:22:38,592: Epoch 1 / 24, batch 17900 / 22745, 0.8380 sec/batch
+2024-12-24 18:24:03,034: Epoch 1 / 24, batch 18000 / 22745, 0.8393 sec/batch
+2024-12-24 18:25:27,099: Epoch 1 / 24, batch 18100 / 22745, 0.8407 sec/batch
+2024-12-24 18:26:50,567: Epoch 1 / 24, batch 18200 / 22745, 0.8377 sec/batch
+2024-12-24 18:28:14,421: Epoch 1 / 24, batch 18300 / 22745, 0.8380 sec/batch
+2024-12-24 18:29:37,926: Epoch 1 / 24, batch 18400 / 22745, 0.8372 sec/batch
+2024-12-24 18:31:01,404: Epoch 1 / 24, batch 18500 / 22745, 0.8367 sec/batch
+2024-12-24 18:32:25,587: Epoch 1 / 24, batch 18600 / 22745, 0.8418 sec/batch
+2024-12-24 18:33:49,306: Epoch 1 / 24, batch 18700 / 22745, 0.8395 sec/batch
+2024-12-24 18:35:12,879: Epoch 1 / 24, batch 18800 / 22745, 0.8383 sec/batch
+2024-12-24 18:36:36,501: Epoch 1 / 24, batch 18900 / 22745, 0.8377 sec/batch
+2024-12-24 18:37:59,786: Epoch 1 / 24, batch 19000 / 22745, 0.8368 sec/batch
+2024-12-24 18:39:24,327: Epoch 1 / 24, batch 19100 / 22745, 0.8454 sec/batch
+2024-12-24 18:40:47,937: Epoch 1 / 24, batch 19200 / 22745, 0.8408 sec/batch
+2024-12-24 18:42:12,608: Epoch 1 / 24, batch 19300 / 22745, 0.8427 sec/batch
+2024-12-24 18:43:36,846: Epoch 1 / 24, batch 19400 / 22745, 0.8426 sec/batch
+2024-12-24 18:45:01,052: Epoch 1 / 24, batch 19500 / 22745, 0.8425 sec/batch
+2024-12-24 18:46:25,480: Epoch 1 / 24, batch 19600 / 22745, 0.8443 sec/batch
+2024-12-24 18:47:49,620: Epoch 1 / 24, batch 19700 / 22745, 0.8428 sec/batch
+2024-12-24 18:49:13,283: Epoch 1 / 24, batch 19800 / 22745, 0.8408 sec/batch
+2024-12-24 18:50:36,717: Epoch 1 / 24, batch 19900 / 22745, 0.8392 sec/batch
+2024-12-24 18:52:01,123: Epoch 1 / 24, batch 20000 / 22745, 0.8401 sec/batch
+2024-12-24 18:53:24,746: Epoch 1 / 24, batch 20100 / 22745, 0.8362 sec/batch
+2024-12-24 18:54:48,337: Epoch 1 / 24, batch 20200 / 22745, 0.8361 sec/batch
+2024-12-24 18:56:11,551: Epoch 1 / 24, batch 20300 / 22745, 0.8348 sec/batch
+2024-12-24 18:57:34,769: Epoch 1 / 24, batch 20400 / 22745, 0.8341 sec/batch
+2024-12-24 18:58:58,552: Epoch 1 / 24, batch 20500 / 22745, 0.8349 sec/batch
+2024-12-24 19:00:22,009: Epoch 1 / 24, batch 20600 / 22745, 0.8346 sec/batch
+2024-12-24 19:01:45,449: Epoch 1 / 24, batch 20700 / 22745, 0.8345 sec/batch
+2024-12-24 19:03:09,043: Epoch 1 / 24, batch 20800 / 22745, 0.8350 sec/batch
+2024-12-24 19:04:33,156: Epoch 1 / 24, batch 20900 / 22745, 0.8365 sec/batch
+2024-12-24 19:05:56,937: Epoch 1 / 24, batch 21000 / 22745, 0.8368 sec/batch
+2024-12-24 19:07:20,504: Epoch 1 / 24, batch 21100 / 22745, 0.8357 sec/batch
+2024-12-24 19:08:44,065: Epoch 1 / 24, batch 21200 / 22745, 0.8356 sec/batch
+2024-12-24 19:10:08,479: Epoch 1 / 24, batch 21300 / 22745, 0.8385 sec/batch
+2024-12-24 19:11:32,122: Epoch 1 / 24, batch 21400 / 22745, 0.8380 sec/batch
+2024-12-24 19:12:55,555: Epoch 1 / 24, batch 21500 / 22745, 0.8372 sec/batch
+2024-12-24 19:14:19,400: Epoch 1 / 24, batch 21600 / 22745, 0.8384 sec/batch
+2024-12-24 19:15:43,025: Epoch 1 / 24, batch 21700 / 22745, 0.8373 sec/batch
+2024-12-24 19:17:06,703: Epoch 1 / 24, batch 21800 / 22745, 0.8372 sec/batch
+2024-12-24 19:18:30,716: Epoch 1 / 24, batch 21900 / 22745, 0.8379 sec/batch
+2024-12-24 19:19:54,332: Epoch 1 / 24, batch 22000 / 22745, 0.8376 sec/batch
+2024-12-24 19:21:18,813: Epoch 1 / 24, batch 22100 / 22745, 0.8448 sec/batch
+2024-12-24 19:22:42,444: Epoch 1 / 24, batch 22200 / 22745, 0.8406 sec/batch
+2024-12-24 19:24:05,990: Epoch 1 / 24, batch 22300 / 22745, 0.8389 sec/batch
+2024-12-24 19:25:29,766: Epoch 1 / 24, batch 22400 / 22745, 0.8386 sec/batch
+2024-12-24 19:26:53,209: Epoch 1 / 24, batch 22500 / 22745, 0.8378 sec/batch
+2024-12-24 19:28:16,939: Epoch 1 / 24, batch 22600 / 22745, 0.8373 sec/batch
+2024-12-24 19:29:40,944: Epoch 1 / 24, batch 22700 / 22745, 0.8387 sec/batch
+2024-12-24 19:30:18,792: Current epoch 2, learning rate 0.1
+2024-12-24 19:30:18,794: Current epoch 2, learning rate 0.1
+2024-12-24 19:30:18,802: Current epoch 2, learning rate 0.1
+2024-12-24 19:30:18,818: Current epoch 2, learning rate 0.1
+2024-12-24 19:30:18,831: Current epoch 2, learning rate 0.1
+2024-12-24 19:30:18,835: Current epoch 2, learning rate 0.1
+2024-12-24 19:30:18,838: Current epoch 2, learning rate 0.1
+2024-12-24 19:30:18,847: Current epoch 2, learning rate 0.1
+2024-12-24 19:30:20,580: Epoch 2 / 24, batch 1 / 22745, 1.7594 sec/batch
+2024-12-24 19:31:43,607: Epoch 2 / 24, batch 100 / 22745, 0.8479 sec/batch
+2024-12-24 19:33:07,503: Epoch 2 / 24, batch 200 / 22745, 0.8434 sec/batch
+2024-12-24 19:34:30,973: Epoch 2 / 24, batch 300 / 22745, 0.8405 sec/batch
+2024-12-24 19:35:54,633: Epoch 2 / 24, batch 400 / 22745, 0.8395 sec/batch
+2024-12-24 19:37:18,851: Epoch 2 / 24, batch 500 / 22745, 0.8401 sec/batch
+2024-12-24 19:38:42,744: Epoch 2 / 24, batch 600 / 22745, 0.8389 sec/batch
+2024-12-24 19:40:06,941: Epoch 2 / 24, batch 700 / 22745, 0.8404 sec/batch
+2024-12-24 19:41:31,488: Epoch 2 / 24, batch 800 / 22745, 0.8421 sec/batch
+2024-12-24 19:42:55,872: Epoch 2 / 24, batch 900 / 22745, 0.8426 sec/batch
+2024-12-24 19:44:21,451: Epoch 2 / 24, batch 1000 / 22745, 0.8452 sec/batch
+2024-12-24 19:45:45,406: Epoch 2 / 24, batch 1100 / 22745, 0.8396 sec/batch
+2024-12-24 19:47:09,264: Epoch 2 / 24, batch 1200 / 22745, 0.8391 sec/batch
+2024-12-24 19:48:33,634: Epoch 2 / 24, batch 1300 / 22745, 0.8406 sec/batch
+2024-12-24 19:49:57,145: Epoch 2 / 24, batch 1400 / 22745, 0.8392 sec/batch
+2024-12-24 19:51:21,304: Epoch 2 / 24, batch 1500 / 22745, 0.8397 sec/batch
+2024-12-24 19:52:45,116: Epoch 2 / 24, batch 1600 / 22745, 0.8381 sec/batch
+2024-12-24 19:54:08,602: Epoch 2 / 24, batch 1700 / 22745, 0.8365 sec/batch
+2024-12-24 19:55:31,943: Epoch 2 / 24, batch 1800 / 22745, 0.8355 sec/batch
+2024-12-24 19:56:55,397: Epoch 2 / 24, batch 1900 / 22745, 0.8352 sec/batch
+2024-12-24 19:58:18,823: Epoch 2 / 24, batch 2000 / 22745, 0.8350 sec/batch
+2024-12-24 19:59:42,612: Epoch 2 / 24, batch 2100 / 22745, 0.8379 sec/batch
+2024-12-24 20:01:07,758: Epoch 2 / 24, batch 2200 / 22745, 0.8447 sec/batch
+2024-12-24 20:02:32,030: Epoch 2 / 24, batch 2300 / 22745, 0.8440 sec/batch
+2024-12-24 20:03:57,041: Epoch 2 / 24, batch 2400 / 22745, 0.8455 sec/batch
+2024-12-24 20:05:21,064: Epoch 2 / 24, batch 2500 / 22745, 0.8445 sec/batch
+2024-12-24 20:06:45,152: Epoch 2 / 24, batch 2600 / 22745, 0.8409 sec/batch
+2024-12-24 20:08:09,968: Epoch 2 / 24, batch 2700 / 22745, 0.8445 sec/batch
+2024-12-24 20:09:34,310: Epoch 2 / 24, batch 2800 / 22745, 0.8442 sec/batch
+2024-12-24 20:10:59,802: Epoch 2 / 24, batch 2900 / 22745, 0.8468 sec/batch
+2024-12-24 20:12:24,126: Epoch 2 / 24, batch 3000 / 22745, 0.8461 sec/batch
+2024-12-24 20:13:48,584: Epoch 2 / 24, batch 3100 / 22745, 0.8446 sec/batch
+2024-12-24 20:15:13,344: Epoch 2 / 24, batch 3200 / 22745, 0.8461 sec/batch
+2024-12-24 20:16:38,087: Epoch 2 / 24, batch 3300 / 22745, 0.8465 sec/batch
+2024-12-24 20:18:02,355: Epoch 2 / 24, batch 3400 / 22745, 0.8456 sec/batch
+2024-12-24 20:19:27,416: Epoch 2 / 24, batch 3500 / 22745, 0.8466 sec/batch
+2024-12-24 20:20:51,395: Epoch 2 / 24, batch 3600 / 22745, 0.8398 sec/batch
+2024-12-24 20:22:16,592: Epoch 2 / 24, batch 3700 / 22745, 0.8459 sec/batch
+2024-12-24 20:23:41,148: Epoch 2 / 24, batch 3800 / 22745, 0.8458 sec/batch
+2024-12-24 20:25:05,895: Epoch 2 / 24, batch 3900 / 22745, 0.8462 sec/batch
+2024-12-24 20:26:30,019: Epoch 2 / 24, batch 4000 / 22745, 0.8452 sec/batch
+2024-12-24 20:27:54,079: Epoch 2 / 24, batch 4100 / 22745, 0.8406 sec/batch
+2024-12-24 20:29:19,389: Epoch 2 / 24, batch 4200 / 22745, 0.8468 sec/batch
+2024-12-24 20:30:43,310: Epoch 2 / 24, batch 4300 / 22745, 0.8443 sec/batch
+2024-12-24 20:32:07,654: Epoch 2 / 24, batch 4400 / 22745, 0.8441 sec/batch
+2024-12-24 20:33:31,942: Epoch 2 / 24, batch 4500 / 22745, 0.8438 sec/batch
+2024-12-24 20:34:56,597: Epoch 2 / 24, batch 4600 / 22745, 0.8466 sec/batch
+2024-12-24 20:36:21,542: Epoch 2 / 24, batch 4700 / 22745, 0.8480 sec/batch
+2024-12-24 20:37:45,793: Epoch 2 / 24, batch 4800 / 22745, 0.8462 sec/batch
+2024-12-24 20:39:10,363: Epoch 2 / 24, batch 4900 / 22745, 0.8461 sec/batch
+2024-12-24 20:40:35,252: Epoch 2 / 24, batch 5000 / 22745, 0.8466 sec/batch
+2024-12-24 20:41:59,438: Epoch 2 / 24, batch 5100 / 22745, 0.8419 sec/batch
+2024-12-24 20:43:24,201: Epoch 2 / 24, batch 5200 / 22745, 0.8447 sec/batch
+2024-12-24 20:44:48,915: Epoch 2 / 24, batch 5300 / 22745, 0.8455 sec/batch
+2024-12-24 20:46:14,279: Epoch 2 / 24, batch 5400 / 22745, 0.8476 sec/batch
+2024-12-24 20:47:38,999: Epoch 2 / 24, batch 5500 / 22745, 0.8475 sec/batch
+2024-12-24 20:49:03,958: Epoch 2 / 24, batch 5600 / 22745, 0.8496 sec/batch
+2024-12-24 20:50:28,587: Epoch 2 / 24, batch 5700 / 22745, 0.8479 sec/batch
+2024-12-24 20:51:53,893: Epoch 2 / 24, batch 5800 / 22745, 0.8496 sec/batch
+2024-12-24 20:53:18,100: Epoch 2 / 24, batch 5900 / 22745, 0.8478 sec/batch
+2024-12-24 20:54:42,724: Epoch 2 / 24, batch 6000 / 22745, 0.8475 sec/batch
+2024-12-24 20:56:07,210: Epoch 2 / 24, batch 6100 / 22745, 0.8449 sec/batch
+2024-12-24 20:57:31,632: Epoch 2 / 24, batch 6200 / 22745, 0.8445 sec/batch
+2024-12-24 20:58:56,176: Epoch 2 / 24, batch 6300 / 22745, 0.8448 sec/batch
+2024-12-24 21:00:21,028: Epoch 2 / 24, batch 6400 / 22745, 0.8458 sec/batch
+2024-12-24 21:01:45,069: Epoch 2 / 24, batch 6500 / 22745, 0.8447 sec/batch
+2024-12-24 21:03:10,057: Epoch 2 / 24, batch 6600 / 22745, 0.8499 sec/batch
+2024-12-24 21:04:34,238: Epoch 2 / 24, batch 6700 / 22745, 0.8458 sec/batch
+2024-12-24 21:05:58,382: Epoch 2 / 24, batch 6800 / 22745, 0.8444 sec/batch
+2024-12-24 21:07:23,287: Epoch 2 / 24, batch 6900 / 22745, 0.8455 sec/batch
+2024-12-24 21:08:47,555: Epoch 2 / 24, batch 7000 / 22745, 0.8450 sec/batch
+2024-12-24 21:10:12,057: Epoch 2 / 24, batch 7100 / 22745, 0.8450 sec/batch
+2024-12-24 21:11:36,172: Epoch 2 / 24, batch 7200 / 22745, 0.8431 sec/batch
+2024-12-24 21:13:00,687: Epoch 2 / 24, batch 7300 / 22745, 0.8438 sec/batch
+2024-12-24 21:14:24,401: Epoch 2 / 24, batch 7400 / 22745, 0.8421 sec/batch
+2024-12-24 21:15:48,411: Epoch 2 / 24, batch 7500 / 22745, 0.8417 sec/batch
+2024-12-24 21:17:12,906: Epoch 2 / 24, batch 7600 / 22745, 0.8450 sec/batch
+2024-12-24 21:18:36,390: Epoch 2 / 24, batch 7700 / 22745, 0.8399 sec/batch
+2024-12-24 21:20:00,202: Epoch 2 / 24, batch 7800 / 22745, 0.8393 sec/batch
+2024-12-24 21:21:23,657: Epoch 2 / 24, batch 7900 / 22745, 0.8381 sec/batch
+2024-12-24 21:22:47,265: Epoch 2 / 24, batch 8000 / 22745, 0.8377 sec/batch
+2024-12-24 21:24:11,213: Epoch 2 / 24, batch 8100 / 22745, 0.8395 sec/batch
+2024-12-24 21:25:35,314: Epoch 2 / 24, batch 8200 / 22745, 0.8402 sec/batch
+2024-12-24 21:26:59,568: Epoch 2 / 24, batch 8300 / 22745, 0.8410 sec/batch
+2024-12-24 21:28:23,758: Epoch 2 / 24, batch 8400 / 22745, 0.8412 sec/batch
+2024-12-24 21:29:47,904: Epoch 2 / 24, batch 8500 / 22745, 0.8413 sec/batch
+2024-12-24 21:31:12,663: Epoch 2 / 24, batch 8600 / 22745, 0.8476 sec/batch
+2024-12-24 21:32:36,465: Epoch 2 / 24, batch 8700 / 22745, 0.8428 sec/batch
+2024-12-24 21:34:00,130: Epoch 2 / 24, batch 8800 / 22745, 0.8408 sec/batch
+2024-12-24 21:35:23,985: Epoch 2 / 24, batch 8900 / 22745, 0.8402 sec/batch
+2024-12-24 21:36:48,224: Epoch 2 / 24, batch 9000 / 22745, 0.8406 sec/batch
+2024-12-24 21:38:11,623: Epoch 2 / 24, batch 9100 / 22745, 0.8340 sec/batch
+2024-12-24 21:39:35,005: Epoch 2 / 24, batch 9200 / 22745, 0.8339 sec/batch
+2024-12-24 21:40:58,919: Epoch 2 / 24, batch 9300 / 22745, 0.8356 sec/batch
+2024-12-24 21:42:22,890: Epoch 2 / 24, batch 9400 / 22745, 0.8367 sec/batch
+2024-12-24 21:43:46,163: Epoch 2 / 24, batch 9500 / 22745, 0.8359 sec/batch
+2024-12-24 21:45:10,569: Epoch 2 / 24, batch 9600 / 22745, 0.8441 sec/batch
+2024-12-24 21:46:35,243: Epoch 2 / 24, batch 9700 / 22745, 0.8454 sec/batch
+2024-12-24 21:47:59,040: Epoch 2 / 24, batch 9800 / 22745, 0.8429 sec/batch
+2024-12-24 21:49:22,972: Epoch 2 / 24, batch 9900 / 22745, 0.8420 sec/batch
+2024-12-24 21:50:47,117: Epoch 2 / 24, batch 10000 / 22745, 0.8419 sec/batch
+2024-12-24 21:52:11,526: Epoch 2 / 24, batch 10100 / 22745, 0.8441 sec/batch
+2024-12-24 21:53:35,794: Epoch 2 / 24, batch 10200 / 22745, 0.8434 sec/batch
+2024-12-24 21:55:00,019: Epoch 2 / 24, batch 10300 / 22745, 0.8430 sec/batch
+2024-12-24 21:56:24,138: Epoch 2 / 24, batch 10400 / 22745, 0.8426 sec/batch
+2024-12-24 21:57:48,324: Epoch 2 / 24, batch 10500 / 22745, 0.8424 sec/batch
+2024-12-24 21:58:31,413: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 21:58:31,433: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 21:58:31,514: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 21:58:33,963: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 21:58:33,977: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 21:58:34,123: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 21:58:34,143: Added key: store_based_barrier_key:1 to store for rank: 5
+2024-12-24 21:58:34,260: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 21:58:34,295: Added key: store_based_barrier_key:1 to store for rank: 2
+2024-12-24 21:58:34,317: Dataset TFR-MS1Mv2, batch_size 32, weight 1.000000, scale 64, margin 0.500000
+2024-12-24 21:58:34,336: Added key: store_based_barrier_key:1 to store for rank: 1
+2024-12-24 21:58:34,436: Added key: store_based_barrier_key:1 to store for rank: 7
+2024-12-24 21:58:34,488: Added key: store_based_barrier_key:1 to store for rank: 4
+2024-12-24 21:58:34,580: Added key: store_based_barrier_key:1 to store for rank: 3
+2024-12-24 21:58:35,034: Added key: store_based_barrier_key:1 to store for rank: 6
+2024-12-24 21:58:35,045: Added key: store_based_barrier_key:1 to store for rank: 0
+2024-12-24 21:58:35,100: world_size: 8, rank: 6, local_rank: 6
+2024-12-24 21:58:35,101: world_size: 8, rank: 0, local_rank: 0
+2024-12-24 21:58:35,106: world_size: 8, rank: 7, local_rank: 7
+2024-12-24 21:58:35,106: world_size: 8, rank: 5, local_rank: 5
+2024-12-24 21:58:35,107: world_size: 8, rank: 4, local_rank: 4
+2024-12-24 21:58:35,108: world_size: 8, rank: 2, local_rank: 2
+2024-12-24 21:58:35,108: world_size: 8, rank: 1, local_rank: 1
+2024-12-24 21:58:35,109: world_size: 8, rank: 3, local_rank: 3
+2024-12-24 21:58:47,383: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 21:58:47,383: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 21:58:47,383: MultiDistributedSampler max_batch_num 22745
+2024-12-24 21:58:47,384: Step_per_epoch = 22745
+2024-12-24 21:58:47,477: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 21:58:47,479: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 21:58:47,479: MultiDistributedSampler max_batch_num 22745
+2024-12-24 21:58:47,480: Step_per_epoch = 22745
+2024-12-24 21:58:47,484: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 21:58:47,485: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 21:58:47,485: MultiDistributedSampler max_batch_num 22745
+2024-12-24 21:58:47,485: Step_per_epoch = 22745
+2024-12-24 21:58:47,503: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 21:58:47,505: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 21:58:47,505: MultiDistributedSampler max_batch_num 22745
+2024-12-24 21:58:47,505: Step_per_epoch = 22745
+2024-12-24 21:58:47,541: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 21:58:47,542: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 21:58:47,543: MultiDistributedSampler max_batch_num 22745
+2024-12-24 21:58:47,543: Step_per_epoch = 22745
+2024-12-24 21:58:47,573: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 21:58:47,575: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 21:58:47,575: MultiDistributedSampler max_batch_num 22745
+2024-12-24 21:58:47,575: Step_per_epoch = 22745
+2024-12-24 21:58:47,622: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727831
+2024-12-24 21:58:47,624: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 21:58:47,624: MultiDistributedSampler max_batch_num 22745
+2024-12-24 21:58:47,625: Step_per_epoch = 22745
+2024-12-24 21:58:47,728: Dataset TFR-MS1Mv2, class_num 85742, total_sample_num 5822653, sample_num 727832
+2024-12-24 21:58:47,731: Dataset TFR-MS1Mv2, total_size 5822720, mine_size 727840, batch_num 22745
+2024-12-24 21:58:47,731: MultiDistributedSampler max_batch_num 22745
+2024-12-24 21:58:47,731: Step_per_epoch = 22745
+2024-12-24 21:58:52,248: IR_50 Backbone Generated
+2024-12-24 21:58:52,249: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 21:58:52,379: IR_50 Backbone Generated
+2024-12-24 21:58:52,381: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 21:58:52,383: IR_50 Backbone Generated
+2024-12-24 21:58:52,385: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 21:58:52,385: IR_50 Backbone Generated
+2024-12-24 21:58:52,387: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 21:58:52,407: IR_50 Backbone Generated
+2024-12-24 21:58:52,408: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 21:58:52,442: IR_50 Backbone Generated
+2024-12-24 21:58:52,444: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 21:58:52,485: IR_50 Backbone Generated
+2024-12-24 21:58:52,487: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 21:58:52,573: IR_50 Backbone Generated
+2024-12-24 21:58:52,575: Split FC: [10718, 10718, 10718, 10718, 10718, 10718, 10717, 10717]
+2024-12-24 21:58:52,664: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 21:58:52,798: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 21:58:52,803: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 21:58:52,804: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 21:58:52,825: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 21:58:52,878: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 21:58:52,904: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 21:58:53,000: FC Start Point: [0, 10718, 21436, 32154, 42872, 53590, 64308, 75025, 85742]
+2024-12-24 21:58:54,797: Current epoch 1, learning rate 0.1
+2024-12-24 21:58:54,799: Current epoch 1, learning rate 0.1
+2024-12-24 21:58:54,802: Current epoch 1, learning rate 0.1
+2024-12-24 21:58:54,805: Current epoch 1, learning rate 0.1
+2024-12-24 21:58:54,806: Current epoch 1, learning rate 0.1
+2024-12-24 21:58:54,809: Current epoch 1, learning rate 0.1
+2024-12-24 21:58:54,811: Current epoch 1, learning rate 0.1
+2024-12-24 21:58:54,811: Current epoch 1, learning rate 0.1
+2024-12-24 21:58:59,495: Epoch 1 / 24, batch 1 / 22745, 4.6960 sec/batch
+2024-12-24 22:00:22,410: Epoch 1 / 24, batch 100 / 22745, 0.8761 sec/batch
+2024-12-24 22:01:46,378: Epoch 1 / 24, batch 200 / 22745, 0.8579 sec/batch
+2024-12-24 22:03:11,149: Epoch 1 / 24, batch 300 / 22745, 0.8545 sec/batch
+2024-12-24 22:04:35,253: Epoch 1 / 24, batch 400 / 22745, 0.8511 sec/batch
+2024-12-24 22:05:59,295: Epoch 1 / 24, batch 500 / 22745, 0.8490 sec/batch
+2024-12-24 22:07:23,277: Epoch 1 / 24, batch 600 / 22745, 0.8398 sec/batch
+2024-12-24 22:08:47,287: Epoch 1 / 24, batch 700 / 22745, 0.8400 sec/batch
+2024-12-24 22:10:10,874: Epoch 1 / 24, batch 800 / 22745, 0.8386 sec/batch
+2024-12-24 22:11:34,344: Epoch 1 / 24, batch 900 / 22745, 0.8376 sec/batch
+2024-12-24 22:12:58,789: Epoch 1 / 24, batch 1000 / 22745, 0.8390 sec/batch
+2024-12-24 22:14:22,859: Epoch 1 / 24, batch 1100 / 22745, 0.8407 sec/batch
+2024-12-24 22:15:46,965: Epoch 1 / 24, batch 1200 / 22745, 0.8409 sec/batch
+2024-12-24 22:17:10,915: Epoch 1 / 24, batch 1300 / 22745, 0.8404 sec/batch
+2024-12-24 22:18:35,120: Epoch 1 / 24, batch 1400 / 22745, 0.8408 sec/batch
+2024-12-24 22:20:00,016: Epoch 1 / 24, batch 1500 / 22745, 0.8425 sec/batch
+2024-12-24 22:21:24,172: Epoch 1 / 24, batch 1600 / 22745, 0.8416 sec/batch
+2024-12-24 22:22:48,241: Epoch 1 / 24, batch 1700 / 22745, 0.8411 sec/batch
+2024-12-24 22:24:12,247: Epoch 1 / 24, batch 1800 / 22745, 0.8408 sec/batch
