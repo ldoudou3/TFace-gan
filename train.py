@@ -110,7 +110,9 @@ class TrainTask(BaseTask):
 
                 loss_fr = self.loss(outputs, labels) * self.branch_weights[i] # 识别损失
                 loss_anta = self.anta_loss(all_features[i],discriminator) # 对抗损失
-                loss_generator =  loss_fr + loss_anta
+                # loss_generator =  loss_fr + loss_anta
+                loss_generator = (loss_fr + 10 * loss_anta) / (1 + 10)
+
 
                 losses_fr.append(loss_fr)
                 losses_anta.append(loss_anta)
