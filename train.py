@@ -13,7 +13,7 @@ from torch.nn.parallel import DistributedDataParallel
 
 
 # from torchjpeg import dct
-# from torch.nn import functional as F
+from torch.nn import functional as F
 from scipy.spatial import ConvexHull, Delaunay
 
 sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..'))
@@ -111,7 +111,7 @@ class TrainTask(BaseTask):
                 loss_fr = self.loss(outputs, labels) * self.branch_weights[i] # 识别损失
                 loss_anta = self.anta_loss(all_features[i],discriminator) # 对抗损失
                 # loss_generator =  loss_fr + loss_anta
-                loss_generator = (loss_fr + 10 * loss_anta) / (1 + 10)
+                loss_generator = (loss_fr + 50 * loss_anta) / (1 + 10)
 
 
                 losses_fr.append(loss_fr)
@@ -226,7 +226,8 @@ class TrainTask(BaseTask):
             seed = int(image_hash, 16) % (2**32)
             torch.manual_seed(seed)
             noise[i] = torch.randn(noise_dim, device=device)
-
+        # 对噪声向量进行 L2 归一化
+        noise = F.normalize(noise, p=2, dim=1)
         return noise
 
     def prepare(self):
