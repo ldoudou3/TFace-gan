@@ -8,13 +8,27 @@ import torch.nn.init as init
 sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)),  '..'))
 from TinyViT.models.tiny_vit import tiny_vit_5m_224
 
+
+class RotationModule(nn.Module):
+    def __init__(self, feature_dim=512, noise_dim=512):
+        super(RotationModule, self).__init__()
+        self.rotation_matrix = nn.Parameter(torch.randn(feature_dim + noise_dim, feature_dim))  # 学习的旋转矩阵
+
+    def forward(self, features, noise):
+        # 将生成器的输出与噪声拼接在一起
+        combined = torch.cat([features, noise], dim=1)  # (batch_size, feature_dim + noise_dim)
+        # 应用旋转矩阵
+        rotated_features = torch.matmul(combined, self.rotation_matrix)
+        return rotated_features
+
+
 # 生成器的对抗loss
 class antaGeneratorLoss(nn.Module):
     def __init__(self):
         super().__init__()
 
     def forward(self,gen_embed,discriminator):
-        # 2. 对抗损失：让判别器将假样本判为真
+        # 对抗损失：让判别器将假样本判为真
         criterion = torch.nn.BCEWithLogitsLoss()
         fake_out = discriminator(gen_embed)
         adv_loss = criterion(fake_out, torch.ones_like(fake_out))
@@ -82,43 +96,43 @@ class DiscriminatorLoss(nn.Module):
         return loss_D # +  10 * gradient_penalty
 
 
-def compute_gradient_penalty(discriminator, real_data, fake_data):
-    """
-    计算 WGAN 的梯度惩罚项
-    Args:
-        discriminator (nn.Module): 判别器网络
-        real_data (Tensor): 真实数据样本，形状为 (batch_size, feature_dim)
-        fake_data (Tensor): 生成器生成的假样本，形状为 (batch_size, feature_dim)
+# def compute_gradient_penalty(discriminator, real_data, fake_data):
+#     """
+#     计算 WGAN 的梯度惩罚项
+#     Args:
+#         discriminator (nn.Module): 判别器网络
+#         real_data (Tensor): 真实数据样本，形状为 (batch_size, feature_dim)
+#         fake_data (Tensor): 生成器生成的假样本，形状为 (batch_size, feature_dim)
 
-    Returns:
-        Tensor: 梯度惩罚值
-    """
-    batch_size = real_data.size(0)
-    alpha = torch.rand(batch_size, 1, device=real_data.device)  # 在 [0, 1] 间采样
-    alpha = alpha.expand_as(real_data)  # 形状扩展到与 real_data 一致
+#     Returns:
+#         Tensor: 梯度惩罚值
+#     """
+#     batch_size = real_data.size(0)
+#     alpha = torch.rand(batch_size, 1, device=real_data.device)  # 在 [0, 1] 间采样
+#     alpha = alpha.expand_as(real_data)  # 形状扩展到与 real_data 一致
 
-    # 插值样本
-    interpolates = alpha * real_data + (1 - alpha) * fake_data
-    interpolates.requires_grad_(True)  # 启用梯度计算
+#     # 插值样本
+#     interpolates = alpha * real_data + (1 - alpha) * fake_data
+#     interpolates.requires_grad_(True)  # 启用梯度计算
 
-    # 判别器输出
-    d_interpolates = discriminator(interpolates)
+#     # 判别器输出
+#     d_interpolates = discriminator(interpolates)
 
-    # 计算梯度
-    gradients = torch.autograd.grad(
-        outputs=d_interpolates,
-        inputs=interpolates,
-        grad_outputs=torch.ones_like(d_interpolates),
-        create_graph=True,
-        retain_graph=True,
-        only_inputs=True,
-    )[0]
+#     # 计算梯度
+#     gradients = torch.autograd.grad(
+#         outputs=d_interpolates,
+#         inputs=interpolates,
+#         grad_outputs=torch.ones_like(d_interpolates),
+#         create_graph=True,
+#         retain_graph=True,
+#         only_inputs=True,
+#     )[0]
 
-    # 计算梯度的 L2 范数
-    gradients = gradients.view(batch_size, -1)  # 展平梯度
-    gradient_penalty = ((gradients.norm(2, dim=1) - 1) ** 2).mean()  # 计算 GP 项
+#     # 计算梯度的 L2 范数
+#     gradients = gradients.view(batch_size, -1)  # 展平梯度
+#     gradient_penalty = ((gradients.norm(2, dim=1) - 1) ** 2).mean()  # 计算 GP 项
 
-    return gradient_penalty
+#     return gradient_penalty
 
 
 

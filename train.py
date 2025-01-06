@@ -45,11 +45,20 @@ class TrainTask(BaseTask):
         backbone, heads = self.backbone, list(self.heads.values())
         discriminator = self.backbone_discriminator # D
 
-        backbone.train()  # set to training mode 将主干模型设置为训练模式。
-        discriminator.train() # D
-
-        for head in heads:
-            head.train()
+        # 第一阶段，生成器、旋转器、判别器，都训练
+        # 第二阶段，旋转器和判别器训练，生成器不训练
+        if self.training_stage == 1:
+            backbone.train()
+            for head in heads:
+                head.train()
+            self.rotation_module.eval()
+            discriminator.train() 
+        else:
+            backbone.eval()
+            for head in heads:
+                head.eval()
+            self.rotation_module.train()
+            discriminator.train()
 
         batch_sizes = self.batch_sizes
         am_losses = [AverageMeter() for _ in batch_sizes]
@@ -65,7 +74,7 @@ class TrainTask(BaseTask):
             inputs = samples[0].cuda(non_blocking=True)
             labels = samples[1].cuda(non_blocking=True)
 
-            # train
+            # 前向传播
             if self.amp:
                 with amp.autocast():
                     features = backbone(inputs)
@@ -73,6 +82,21 @@ class TrainTask(BaseTask):
             else:
                 features = backbone(inputs)
 
+            # 生成噪声向量
+            noise_embed = self.generate_fixed_noise(inputs, 512) 
+            
+            # 第一阶段，不使用旋转，第二阶段才旋转
+            if self.training_stage == 2:
+                # 旋转特征向量
+                features = self.rotation_module(features, noise_embed) 
+
+
+            # gather noises
+            noises_gather = AllGather(noise_embed, self.world_size)
+            noises_gather = [torch.split(x, batch_sizes) for x in noises_gather]
+            all_noises = []
+            for i in range(len(batch_sizes)):
+                all_noises.append(torch.cat([x[i] for x in noises_gather], dim=0).cuda())
 
             # gather features
             features_gather = AllGather(features, self.world_size)
@@ -95,7 +119,7 @@ class TrainTask(BaseTask):
             all_inputs = []
             for i in range(len(batch_sizes)):
                 all_inputs.append(torch.cat([x[i] for x in inputs_gather], dim=0).cuda())
-       
+
 
             losses_generator = [] # 生成器总损失
             losses_fr = [] # 识别
@@ -111,16 +135,15 @@ class TrainTask(BaseTask):
                 loss_fr = self.loss(outputs, labels) * self.branch_weights[i] # 识别损失
                 loss_anta = self.anta_loss(all_features[i],discriminator) # 对抗损失
                 # loss_generator =  loss_fr + loss_anta
-                loss_generator = (loss_fr + 50 * loss_anta) / (1 + 10)
-
+                loss_generator = (loss_fr + 10 * loss_anta) / (1 + 10)
 
                 losses_fr.append(loss_fr)
                 losses_anta.append(loss_anta)
                 losses_generator.append(loss_generator)
 
-                # 生成噪声向量
-                noise_embed = self.generate_fixed_noise(all_inputs[i], 512) # D
-                discriminator_loss  = self.discriminator_loss(noise_embed,all_features[i].detach().clone(),discriminator,epoch) # D
+                # 输出all_noises[i]的形状
+                # print(all_noises[i].shape)
+                discriminator_loss  = self.discriminator_loss(all_noises[i],all_features[i].detach().clone(),discriminator,epoch) # D
                 losses_discriminator.append(discriminator_loss) # D
                 
                 prec1, prec5 = accuracy_dist(self.cfg,
@@ -159,33 +182,56 @@ class TrainTask(BaseTask):
                     "loss_generator_anta":total_loss_anta
                 }, step=step + epoch * len(self.train_loader))
             
-            # compute gradient and do SGD
-            backbone_opt.zero_grad()
-            discriminator_opt.zero_grad() # D
-            for head_opt in head_opts:
-                head_opt.zero_grad()
-
-
-            # Automatic Mixed Precision setting
-            if self.amp:
-                self.scaler.scale(total_loss_generator).backward(retain_graph=True)
-                self.scaler.step(backbone_opt)
-
-                self.scaler.scale(total_loss_discriminator).backward(retain_graph=True) # D
-                self.scaler.step(discriminator_opt) # D
-
+            # 优化器
+            if self.training_stage == 1:
+                # 清除梯度
+                backbone_opt.zero_grad()
                 for head_opt in head_opts:
-                    self.scaler.step(head_opt)
-                self.scaler.update()
-            else:
-                total_loss_generator.backward(retain_graph=True)
-                backbone_opt.step()
+                    head_opt.zero_grad()
+                discriminator_opt.zero_grad() # D
 
-                total_loss_discriminator.backward(retain_graph=True) # D
-                discriminator_opt.step() # D
+                # 反向传播
+                if self.amp:
+                    self.scaler.scale(total_loss_generator).backward(retain_graph=True)
+                    self.scaler.step(backbone_opt)
 
-                for head_opt in head_opts:
-                    head_opt.step()
+                    self.scaler.scale(total_loss_discriminator).backward(retain_graph=True) # D
+                    self.scaler.step(discriminator_opt) # D
+
+                    for head_opt in head_opts:
+                        self.scaler.step(head_opt)
+
+                    self.scaler.update()
+                else:
+                    total_loss_generator.backward(retain_graph=True)
+                    backbone_opt.step()
+
+                    total_loss_discriminator.backward(retain_graph=True) # D
+                    discriminator_opt.step() # D
+
+                    for head_opt in head_opts:
+                        head_opt.step()
+
+            elif self.training_stage == 2:
+                # 清除梯度
+                self.opt_rotation.zero_grad()
+                discriminator_opt.zero_grad()
+
+                # 反向传播
+                if self.amp:
+                    self.scaler.scale(total_loss_generator).backward(retain_graph=True)
+                    self.scaler.step(self.opt_rotation)
+
+                    self.scaler.scale(total_loss_discriminator).backward(retain_graph=True) # D
+                    self.scaler.step(discriminator_opt) # D
+                    self.scaler.update()
+                else:
+                    total_loss_generator.backward(retain_graph=True)  # 旋转模块的损失
+                    self.opt_rotation.step()
+
+                    total_loss_discriminator.backward(retain_graph=True)  # 判别器损失
+                    discriminator_opt.step()
+
 
             # PartialFC need update weight and weight_norm manually
             if self.pfc:
@@ -237,15 +283,22 @@ class TrainTask(BaseTask):
             print(key, self.cfg[key])
         self.make_inputs()
         self.make_model()
+        self.rotation_module = models.RotationModule().cuda()  # 旋转模块
         self.backbone_discriminator = models.Discriminator().cuda() # D
         self.loss = get_loss('DistCrossEntropy').cuda()
         self.anta_loss = models.antaGeneratorLoss().cuda()  # 对抗损失
         self.discriminator_loss = models.DiscriminatorLoss().cuda() # D
+
         self.opt = self.get_optimizer()
         self.opt_discriminator = self.get_discriminator_optimizer() # D
+        self.opt_rotation = optim.Adam(self.rotation_module.parameters(), lr=0.001)  # 旋转模块的优化器
+
         self.scaler = amp.GradScaler()
         self.register_hooks()
         self.pfc = self.cfg['HEAD_NAME'] == 'PartialFC'
+
+        # 初始化为第一阶段
+        self.training_stage = 1  # 初始化为第一阶段
 
     def train(self):
         self.prepare()
@@ -255,6 +308,11 @@ class TrainTask(BaseTask):
         self.backbone_discriminator = DistributedDataParallel(self.backbone_discriminator,
                                                 device_ids=[self.local_rank], find_unused_parameters=True) # D
         for epoch in range(self.start_epoch, self.epoch_num):
+            if epoch == self.cfg['STAGE_2_START']:
+                self.log_ldd(epoch)
+                self.training_stage = 2  # 切换到第二阶段
+                for param in self.backbone.parameters():
+                    param.requires_grad = False  # 冻结生成器
             self.call_hook("before_train_epoch", epoch)
             self.loop_step(epoch)
             self.call_hook("after_train_epoch", epoch)
@@ -301,7 +359,7 @@ if __name__ == '__main__':
     # 初始化日志记录器
     timestamp = time.strftime("%Y%m%d_%H%M%S")
     wandb.init(
-        project=timestamp,  # 替换为你的项目名称
+        project=timestamp+"rotate-at-3epoch-7gpu",  # 替换为你的项目名称
         name="ldd"        # 可选，为当前运行指定名称
     )
     main()
