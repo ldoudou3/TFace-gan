@@ -4,7 +4,7 @@ import os
 import sys
 import torch.nn.init as init
 # from torchvision import transforms
-
+import torch.nn.functional as F
 sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)),  '..'))
 from TinyViT.models.tiny_vit import tiny_vit_5m_224
 
@@ -21,6 +21,25 @@ class RotationModule(nn.Module):
         rotated_features = torch.matmul(combined, self.rotation_matrix)
         return rotated_features
 
+class TransformationNet(nn.Module):
+    def __init__(self, input_dim=512):
+        super(TransformationNet, self).__init__()
+
+        # 线性层：接受模板特征和噪声，合并后变换
+        self.fc1 = nn.Linear(input_dim * 2, 1024)  # 输入模板和噪声拼接后的维度
+        self.fc2 = nn.Linear(1024, 512)  # 隐藏层，输出 512 维度的变换特征
+        self.fc3 = nn.Linear(512, input_dim)  # 输出变换后的模板特征
+
+    def forward(self, template, noise_embed):
+        # 拼接模板特征和噪声向量
+        combined_input = torch.cat([template, noise_embed], dim=1)  # [batch_size, 512 * 2]
+
+        # 前向传播通过全连接层
+        x = F.relu(self.fc1(combined_input))
+        x = F.relu(self.fc2(x))
+        transformed_template = self.fc3(x)
+
+        return transformed_template
 
 # 生成器的对抗loss
 class antaGeneratorLoss(nn.Module):
